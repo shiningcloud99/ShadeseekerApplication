@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.create.CreateFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="30dp">
+
+        <!-- Brand Upload Section -->
+        <LinearLayout
+            android:id="@+id/brandUploadLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/brandName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Brand Name"/>
+
+            <EditText
+                android:id="@+id/brandDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Brand Description"/>
+
+            <Button
+                android:id="@+id/selectImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Image"/>
+
+            <ImageView
+                android:id="@+id/brandImageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop" />
+
+            <Button
+                android:id="@+id/uploadBrandButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Brand"/>
+
+        </LinearLayout>
+
+        <!-- Product Upload Section -->
+        <LinearLayout
+            android:id="@+id/productUploadLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <Spinner
+                android:id="@+id/brandSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"/>
+
+
+            <EditText
+                android:id="@+id/productName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Name"/>
+
+            <EditText
+                android:id="@+id/productDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Description"/>
+
+            <EditText
+                android:id="@+id/productShade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Shade"/>
+
+            <EditText
+                android:id="@+id/productTone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Tone"/>
+
+            <EditText
+                android:id="@+id/productCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Code"/>
+
+            <Button
+                android:id="@+id/selectProductImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Product Image"/>
+
+            <ImageView
+                android:id="@+id/productImageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"/>
+
+            <Button
+                android:id="@+id/uploadProductButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Product"/>
+
+        </LinearLayout>
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/wine"
+            android:visibility="invisible"/>
+    </LinearLayout>
+</ScrollView>

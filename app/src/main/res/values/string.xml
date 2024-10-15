@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application 2</string>
+    <string name="select1">Select Brand</string>
+    <string name="select2">Select Product</string>
+    <string name="select3">Select Shade</string>
+</resources>

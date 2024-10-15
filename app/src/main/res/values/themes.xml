@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
+
+    <style name="RoundCorner" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+        <item name="color">@color/lavender_blush</item>
+    </style>
+
+    <style name="toolbartext" parent="TextAppearance.MaterialComponents.Button">
+
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="myapplication.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/lavender_blush</item>
+        <item name="theme">@style/Base.Theme.MyApplication</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="titleTextAppearance">@style/toolbartext</item>
+    </style>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailProducts">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/backbar"
+
+            app:titleTextColor="@color/wine"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:id="@+id/detailImage"
+                android:layout_marginTop="0dp"
+                android:padding="0dp"
+                android:layout_gravity="center"
+                android:src="@drawable/luxcrimetwo"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="luxcrime"
+                android:padding="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center"
+                android:textColor="@color/wine"
+                android:textSize="14sp"
+                android:id="@+id/detailBrand"
+                android:fontFamily="@font/poppins_medium"
+                android:drawableRight="@drawable/baseline_favorite_24"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Blur and Cover Two Way Cake"
+                android:padding="0dp"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center"
+                android:textColor="@color/wine"
+                android:textSize="18sp"
+                android:id="@+id/detailProductName"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="N00"
+                android:padding="0dp"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center"
+                android:textColor="@color/wine"
+                android:textSize="18sp"
+                android:id="@+id/detailShade"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Shade Description: N00 - Light skin with neutral undertone"
+                android:padding="0dp"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center"
+                android:textColor="@color/wine"
+                android:textSize="14sp"
+                android:id="@+id/detailDesc"/>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/wine"
+        android:text="Buy Now"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="18dp"/>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
